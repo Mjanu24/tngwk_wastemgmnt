@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waste Management App</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      
+    
+    color: #333;
+    scroll-behavior: smooth;
+    font-family: 'Arial', sans-serif;
+
+
+    }
+
+    .container {
+      max-width: 480px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Header */
+    .header {
+      background-color: #4caf50;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 1.8em;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+      background: #4caf50;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.9em;
+      text-align: center;
+    }
+
+    .navbar a:hover {
+      color: #f4f8fb;
+    }
+
+    /* Section */
+    .section {
+      padding: 20px;
+background-image: url('https://img.freepik.com/premium-photo/modern-background-with-large-translucent-recycling-symbol-shades-green-blue-set_220770-109291.jpg'); /* Replace with the actual file path */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the background static when scrolling */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    }
+
+    .section h2 {
+      font-size: 1.3em;
+      margin-bottom: 10px;
+    }
+
+    /* Cards */
+    .card {
+      background: #fff;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    /* Grid for Features */
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .grid-item {
+      flex: 1 1 calc(33% - 10px);
+      text-align: center;
+      padding: 10px;
+      background: #f4f8fb;
+      border-radius: 5px;
+    }
+
+    .grid-item img {
+      width: 50px;
+      height: 50px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.8em;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header with Navigation -->
+    <div class="header" id="home">
+      <h1>Waste Management</h1>
+      <p>Recycle, reduce, and reuse!</p>
+
+      <!-- Navigation Bar inside Header -->
+      <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#schedule">Pick-up</a>
+        <a href="#podcast">Podcast</a>
+      </div>
+    </div>
+
+    <!-- Recyclable Products Section -->
+    <div class="section" id="shop">
+      <h2>Recyclable Products</h2>
+      <div class="card">
+        <p>Shop for recycled woolen clothes, stationery, and more!</p>
+        <img src="C:\Users\mjren\Dropbox\PC\Downloads\50-easy-diy-projects.jpg" alt="Shop Items">
+ <a href="https://www.bing.com/ck/a?!&&p=b1a64052b7dab3e29baccc65ca448c3d1dbc1643751271813bdd406c7212b9f0JmltdHM9MTczNzQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=129865ba-18a6-644d-352c-768b19de659c&psq=porecycled+shop+in+qatar&u=a1aHR0cHM6Ly93d3cucWF0YXJ5ZWxsby5jb20vY2F0ZWdvcnkvUmVjeWNsaW5n&ntb=1" target="_blank">Visit Shop</a>
+      </div>
+    </div>
+
+    <!-- Pick-up Schedule Section -->
+    <div class="section" id="schedule">
+      <h2>Pick-up Schedule</h2>
+      <div class="card">
+        <p>Select what you want to recycle:</p>
+        <div class="grid">
+          <div class="grid-item">
+            <img src="C:\Users\mjren\Dropbox\PC\Downloads\OIP (6).jpg" alt="Plastic">
+            <p>Plastic</p>
+          </div>
+          <div class="grid-item">
+            <img src="C:\Users\mjren\Dropbox\PC\Downloads\OIP (7).jpg" alt="E-waste">
+            <p>E-waste</p>
+          </div>
+          <div class="grid-item">
+            <img src="C:\Users\mjren\Dropbox\PC\Downloads\OIP (8).jpg" alt="Glass">
+            <p>Glass</p>
+ <p>Fill in the details for pick-up:</p>
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="text" placeholder="Address" required>
+          <select required>
+            <option value="plastic">Plastic</option>
+            <option value="ewaste">E-waste</option>
+            <option value="glass">Glass</option>
+          </select>
+          <button type="submit">Submit</button>
+        </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Podcast Section -->
+    <div class="section" id="podcast">
+      <h2>Podcast</h2>
+      <div class="card">
+        <p>Listen to the latest eco-friendly tips and news!</p>
+        <img src="C:\Users\mjren\Dropbox\PC\Downloads\OIP (9).jpg" alt="Podcast">
+  <a href="https://podcast.feedspot.com/recycling_podcasts" target="_blank">Visit Podcast</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Waste Management Inc.
+  </footer>
+</style>
+</body>
+</html>
